@@ -8,4 +8,4 @@ export LD_LIBRARY_PATH=/opt/rh/llvm-toolset-7.0/root/usr/lib64${LD_LIBRARY_PATH:
 
 python3 -m pip wheel . -w dist/ --no-deps
 auditwheel repair dist/*.whl --plat $AUDITWHEEL_PLAT
-twine upload --skip-existing wheelhouse/*
+# twine upload --skip-existing wheelhouse/*
